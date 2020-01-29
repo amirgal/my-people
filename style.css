@@ -1,0 +1,30 @@
+body {
+    background-color: #41b3a3;
+}
+
+#my-people {
+    text-shadow: 5px 5px 15px whitesmoke;
+}
+
+#users {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+}
+
+.user {
+    display: inline-block;
+    border: 1px solid black;
+    padding: 10px;
+    background-color: #E8A87C;
+}
+
+.user:hover {
+    box-shadow: 5px 5px 10px black;
+}
+
+@media (max-width: 700px){
+    #users {
+        grid-template-columns: 1fr 1fr;
+    }
+}
